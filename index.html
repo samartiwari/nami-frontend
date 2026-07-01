@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nami — Wikipedia Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="topbar" class="hidden">
+    <a href="/" class="logo-small">🧭 nami</a>
+    <form id="search-form-top" class="search-bar">
+      <input id="q-top" type="text" autocomplete="off" placeholder="Chart a course through Wikipedia..." />
+      <button type="submit" aria-label="Navigate"><span class="compass-ico">🧭</span>Navigate</button>
+    </form>
+  </header>
+
+  <main>
+    <!-- Landing (centered) search -->
+    <section id="landing">
+      <h1 class="logo">🧭 nami</h1>
+      <p class="tagline">Your Log Pose for Wikipedia — navigate a sea of knowledge</p>
+      <form id="search-form" class="search-bar big">
+        <input id="q" type="text" autocomplete="off" autofocus
+               placeholder="Chart a course through Wikipedia..." />
+        <button type="submit"><span class="compass-ico">🧭</span>Navigate</button>
+      </form>
+      <div id="history" class="history hidden"></div>
+    </section>
+
+    <!-- Results -->
+    <section id="results-area" class="hidden">
+      <div id="did-you-mean" class="did-you-mean hidden"></div>
+      <div id="stats" class="stats"></div>
+      <div id="results"></div>
+      <nav id="pagination" class="pagination hidden" aria-label="Search result pages"></nav>
+      <div id="message" class="message"></div>
+    </section>
+  </main>
+
+  <footer>
+    ⚓ Built with Spring Boot + PostgreSQL &middot; BM25 ranking &middot; no external search engine
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
