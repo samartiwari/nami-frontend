@@ -3,7 +3,7 @@
 // Local testing: http://localhost:8080
 // Production:    https://your-backend-domain.com   (behind Nginx/HTTPS)
 // ============================================================================
-const API_URL = "http://localhost:8080";
+const API_URL = "https://nami-domain.duckdns.org";
 
 const PAGE_SIZE = 10;
 
